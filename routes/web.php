@@ -34,3 +34,7 @@ Route::group(['prefix'=>'products'], function(){
     Route::post('/delete-product', [ProductController::class, 'destroy']);
 });
 
+Route::group(['prefix'=>'categories'], function(){
+    Route::get('/', [CategoryController::class, 'index']);
+});
+

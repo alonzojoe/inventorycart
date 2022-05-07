@@ -24,8 +24,8 @@ Products
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="/dashboard">Dashboard</a></li>
-                            <li><a href="/products">Products</a></li>
+                            <li><i class="menu-icon fa fa-dashboard"></i> <a href="/dashboard">Dashboard</a></li>
+                            <li><i class="menu-icon fa fa-shopping-cart"></i> <a href="/products">Products</a></li>
                         </ol>
                     </div>
                 </div>
@@ -82,10 +82,13 @@ Products
                                 </tr>
                             </thead>
                             <tbody>
+                                @php
+                                $c = 1
+                                @endphp
                                 @foreach ($products as $product)
                                 @if(!$products->isEmpty())
                                 <tr>
-                                    <td>{{ $product->id }}</td>
+                                    <td>{{ $c++ }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->description }}</td>
                                     <td>{{ $product->price }}</td>

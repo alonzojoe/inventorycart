@@ -8,6 +8,9 @@
                 <li>
                     <a href="/products" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-shopping-cart"></i>Products</a>
                 </li>
+                <li>
+                    <a href="/categories" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list"></i>Categories</a>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
